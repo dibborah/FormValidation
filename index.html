@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/c4254e24a8.js"
-      crossorigin="anonymous"
+      crossorigin="anonymous" defer
     ></script>
     <script src="index.js" defer></script>
   </head>
@@ -21,7 +21,7 @@
         </div>
         <div class="input-group">
           <label>Enter Phone</label>
-          <input type="tel" placeholder="636-232-3332" />
+          <input type="tel" placeholder="636-232-3332" id="contact-phone" onkeyup="validatePhone()"/>
           <span id="phone-error"></span>
         </div>
         <div class="input-group">
@@ -34,7 +34,7 @@
           <textarea rows="5" placeholder="Enter message"></textarea>
           <span id="message-error"></span>
         </div>
-        <button>Submit</button>
+        <button type="submit">Submit</button>
         <span id="submit-error"></span>
       </form>
     </div>
