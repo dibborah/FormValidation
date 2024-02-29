@@ -21,20 +21,21 @@
         </div>
         <div class="input-group">
           <label>Enter Phone</label>
-          <input type="tel" placeholder="636-232-3332" id="contact-phone" onkeyup="validatePhone()"/>
+          <input type="tel" placeholder="636-232-3332" id="contact-phone" onkeyup="validatePhone()" />
           <span id="phone-error"></span>
         </div>
         <div class="input-group">
           <label>Enter Email</label>
-          <input type="email" placeholder="Enter email" />
+          <input type="email" placeholder="Enter email" id="contact-email" onkeyup="validateEmail()" />
           <span id="email-error"></span>
         </div>
         <div class="input-group">
           <label>Enter message</label>
-          <textarea rows="5" placeholder="Enter message"></textarea>
+          <textarea rows="5" placeholder="Enter message" id="contact-message" onkeyup="validateMessage()"></textarea>
           <span id="message-error"></span>
         </div>
-        <button type="submit">Submit</button>
+        <!-- <button onclick="return validateForm()">Submit</button> -->
+        <button onclick="return validateForm()">Submit</button><!--The return statement returns the default submit behaviour of the button in the form if the function return false or some falsy values-->
         <span id="submit-error"></span>
       </form>
     </div>
