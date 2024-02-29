@@ -9,33 +9,33 @@
       src="https://kit.fontawesome.com/c4254e24a8.js"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js" defer></script>
   </head>
   <body>
     <div class="container">
       <form>
-        <i class="fas fa-paper-plane"></i>
         <div class="input-group">
           <label>Enter Name</label>
-          <input type="text" placeholder="Enter name" />
-          <span id="name-error">name is required</span>
+          <input type="text" placeholder="Enter name" id="contact-name" onkeyup="validateName()"/>
+          <span id="name-error"></span>
         </div>
         <div class="input-group">
           <label>Enter Phone</label>
           <input type="tel" placeholder="636-232-3332" />
-          <span id="phone-error">phone is required</span>
+          <span id="phone-error"></span>
         </div>
         <div class="input-group">
           <label>Enter Email</label>
           <input type="email" placeholder="Enter email" />
-          <span id="email-error">email is required</span>
+          <span id="email-error"></span>
         </div>
         <div class="input-group">
           <label>Enter message</label>
           <textarea rows="5" placeholder="Enter message"></textarea>
-          <span id="message-error">message is required</span>
+          <span id="message-error"></span>
         </div>
         <button>Submit</button>
-        <span id="submit-error">Please fix error</span>
+        <span id="submit-error"></span>
       </form>
     </div>
   </body>
